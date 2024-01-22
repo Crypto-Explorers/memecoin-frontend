@@ -97,7 +97,11 @@ export const Header = () => {
                 </Button>
               )}
             </div>
-            <Button onClick={handleDisconnectionToMetamask}>Disconnect</Button>
+            {account && (
+              <Button onClick={handleDisconnectionToMetamask}>
+                Disconnect
+              </Button>
+            )}
           </div>
         </motion.div>
       )}
